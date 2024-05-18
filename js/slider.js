@@ -12,7 +12,7 @@ $(document).ready(function() {
         $("#projNum").attr("value", num);
         $("#projNum").empty().append(num);
 
-        $.getJSON("../jsonFiles/projectDatas.json", function(data) {
+        $.getJSON(".../jsonFiles/projectDatas.json", function(data) {
             $.each(data.projects, function(key, value) {
                 if (key === "project" + num) {
                     $(".project").empty().append("<div  class=\"projectTop\"> <h1>" + value.title + "</h1>" +
@@ -35,7 +35,7 @@ $(document).ready(function() {
         $("#projNum").attr("value", num);
         $("#projNum").empty().append(num);
 
-        $.getJSON("../jsonFiles/projectDatas.json", function(data) {
+        $.getJSON(".../jsonFiles/projectDatas.json", function(data) {
             $.each(data.projects, function(key, value) {
                 if (key === "project" + num) {
                     $(".project").empty().append("<div  class=\"projectTop\"> <h1>" + value.title + "</h1>" +
